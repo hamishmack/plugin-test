@@ -1,0 +1,22 @@
+cabal-version: 2.0
+name: use-case
+version: 0.1.0.0
+license: Apache-2.0
+author: Hamish Mackenzie
+stability: experimental
+synopsis: Use a GHC plugin
+description:
+    Test using a GHC plugin using template haskell
+category: Language
+build-type: Simple
+
+library
+    exposed-modules:
+        TH
+        Use
+    hs-source-dirs: src
+    build-depends:
+        base -any,
+        plugin -any,
+        template-haskell -any
+

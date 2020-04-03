@@ -1,0 +1,6 @@
+cradle:
+  direct:
+    arguments:
+      - -package-db=/nix/store/c2w4srycijdzh1b3ak8sphlcyhz7xn9a-ghc-shell-for-use-case-ghc-8.6.5-env/lib/ghc-8.6.5/package.conf.d
+      - -isrc
+

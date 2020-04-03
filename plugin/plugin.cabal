@@ -1,0 +1,19 @@
+cabal-version: 2.2
+name: plugin
+version: 0.1.0.0
+license: Apache-2.0
+author: Hamish Mackenzie
+synopsis: Minimal GHC plugin
+description:
+    Minimal GHC plugin for testing haskell.nix and ghcide
+category: Language
+build-type: Simple
+
+library
+    hs-source-dirs: src
+    exposed-modules:
+        Plugin
+    build-depends:
+        base >=4.9 && <5,
+        ghc >=8.6 && <8.7
+
