@@ -1,4 +1,4 @@
-{ sources ? (import ./nix/sources.nix) # // { "haskell.nix" = ../haskell.nix; }
+{ sources ? (import ./nix/sources.nix) # // { ghcide-nix = ../ghcide-nix; } # // { "haskell.nix" = ../haskell.nix; }
 , pkgs ? import sources.nixpkgs (haskellNixpkgsArgs // { inherit system; })
 # where
 , nixpkgs ? sources.nixpkgs
@@ -23,7 +23,7 @@ let
             }
         ];
     };
-    ghcide = (import (sources.ghcide-nix + "/nix") { inherit sources system; }).export.ghcide-ghc865;
+    ghcide = (import (sources.ghcide-nix + "/nix") { inherit sources system; executableDynamic = true; }).export.ghcide-ghc865;
 in (project.shellFor {
       packages = ps: [ ps.use-case ];
     }).overrideAttrs (attrs: {

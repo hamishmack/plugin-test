@@ -12,15 +12,15 @@
         "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
     },
     "ghcide-nix": {
-        "branch": "master",
+        "branch": "exec-dynamic-arg",
         "description": "Nix installation for ghcide",
         "homepage": "https://github.com/digital-asset/ghcide",
-        "owner": "cachix",
+        "owner": "hamishmack",
         "repo": "ghcide-nix",
-        "rev": "f940ec611cc6914693874ee5e024eba921cab19e",
-        "sha256": "0vri0rivdzjvxrh6lzlwwkh8kzxsn82jp1c2w5rqzhp87y6g2k8z",
+        "rev": "c6405786e79b275090e164e1ca684000e8c3cc68",
+        "sha256": "04gjpaghdq6s5692zywm5c9415r1hhxxynjp55wniy8na9pagjgf",
         "type": "tarball",
-        "url": "https://github.com/cachix/ghcide-nix/archive/f940ec611cc6914693874ee5e024eba921cab19e.tar.gz",
+        "url": "https://github.com/hamishmack/ghcide-nix/archive/c6405786e79b275090e164e1ca684000e8c3cc68.tar.gz",
         "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
     },
     "haskell.nix": {
